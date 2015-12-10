@@ -4,7 +4,9 @@ MAINTAINER Luca Corbo <lu.corbo@gmail.com>
 
 ENV COMPOSER_VERSION 1.0.0-alpha11
 
-RUN apk --update add curl \
+RUN apk --update add \
+    curl \
+    git \
 	php-cli \
 	php-openssl \
 	php-dom \
