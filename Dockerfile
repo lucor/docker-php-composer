@@ -7,6 +7,10 @@ ENV COMPOSER_VERSION 1.0.0-alpha11
 RUN apk --update add curl \
 	php-cli \
 	php-openssl \
+	php-dom \
+	php-mcrypt \
+	php-zip \
+	php-bz2 \
 	php-json \
 	php-phar
 
