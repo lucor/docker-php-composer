@@ -1,12 +1,12 @@
-FROM alpine:latest
+FROM alpine:3.3
 
 MAINTAINER Luca Corbo <lu.corbo@gmail.com>
 
 ENV COMPOSER_VERSION 1.0.0-alpha11
 
 RUN apk --update add \
-    curl \
-    git \
+  curl \
+  git \
 	php-cli \
 	php-openssl \
 	php-dom \
@@ -14,6 +14,7 @@ RUN apk --update add \
 	php-zip \
 	php-bz2 \
 	php-json \
+  php-xml \
 	php-phar
 
 # Install Composer
