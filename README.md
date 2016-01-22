@@ -4,8 +4,10 @@ A lightweight Docker image for [Composer](https://getcomposer.org/)
 
 It provides:
   - composer `v1.0.0-alpha11`
-  - php `v5.6.17`
+  - php `v7.0.2`
 
-## Example
+## Examples
 
-  docker run -ti --rm -v $(pwd):/app lucor/composer help
+  docker run --rm -ti -v $(pwd):/app lucor/composer help
+
+  docker run --rm -ti -v $(pwd):/app -v $HOME/.composer:/root/.composer lucor/composer --ansi help
