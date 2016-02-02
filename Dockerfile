@@ -9,4 +9,4 @@ RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local
 
 WORKDIR /app
 
-ENTRYPOINT ["/usr/local/bin/composer"]
+CMD ["/usr/local/bin/composer"]
