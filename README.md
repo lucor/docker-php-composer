@@ -4,7 +4,7 @@ A lightweight Docker image for [Composer](https://getcomposer.org/)
 
 It provides:
   - composer `v1.0.0-alpha11`
-  - php `v7.0.2`
+  - php `v7.0.3`
 
 ## Examples
 
