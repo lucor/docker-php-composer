@@ -13,8 +13,18 @@ For the full list of available PHP extensions see the [lucor/php7-cli](https://h
 
 ## Examples
 
-  docker run --rm -ti -v $(pwd):/app lucor/composer help
+  docker run --rm -ti \
+    -v $(pwd):/app \
+    lucor/composer help
 
-  docker run --rm -ti -v $(pwd):/app -v $HOME/.composer:/root/.composer lucor/composer --ansi help
+  docker run --rm -ti 
+    -v $(pwd):/app \
+    -v $HOME/.composer:/root/.composer \
+    lucor/composer --ansi help
   
-  docker run --rm -ti -v $(pwd):/app -v $HOME/.composer:/root/.composer lucor/composer --ignore-platform-reqs install
+  docker run --rm -ti \
+    -v $(pwd):/app \
+    -v $HOME/.composer:/root/.composer \
+    -v $HOME/.ssh:/root/.ssh:ro \
+    lucor/composer --ignore-platform-reqs install
+
