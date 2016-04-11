@@ -9,7 +9,7 @@ It provides:
   - composer `v1.0.0`
   - php `v7.0.x`
 
-For the full list of available PHP extensions see the [lucor/php7-cli](https://hub.docker.com/r/lucor/php7-cli/) base image 
+For the full list of available PHP extensions see the [lucor/php7-cli](https://hub.docker.com/r/lucor/php7-cli/) base image
 
 ## Examples
 
@@ -19,16 +19,17 @@ For the full list of available PHP extensions see the [lucor/php7-cli](https://h
     lucor/composer help
 ```
 ```
-  docker run --rm -ti 
+  docker run --rm -ti
     -v $(pwd):/app \
-    -v $HOME/.composer:/root/.composer \
+    -v $HOME/.composer:/home/.composer \
+    -u $(id -u):$(id -g) \
     lucor/composer --ansi help
 ```
 ```
   docker run --rm -ti \
     -v $(pwd):/app \
-    -v $HOME/.composer:/root/.composer \
-    -v $HOME/.ssh:/root/.ssh:ro \
+    -v $HOME/.composer:/home/.composer \
+    -v $HOME/.ssh:/home/.ssh:ro \
+    -u $(id -u):$(id -g) \
     lucor/composer --ignore-platform-reqs install
 ```
-
