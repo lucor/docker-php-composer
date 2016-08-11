@@ -1,6 +1,6 @@
 # Lightweight Docker Image for Composer
 
-[![](https://badge.imagelayers.io/lucor/composer:latest.svg)](https://imagelayers.io/?images=lucor/composer:latest 'Get your own badge on imagelayers.io')
+[![](https://images.microbadger.com/badges/image/lucor/composer.svg)](http://microbadger.com/images/lucor/composer "Get your own image badge on microbadger.com")
 
 A lightweight Docker image for [Composer](https://getcomposer.org/)
 
