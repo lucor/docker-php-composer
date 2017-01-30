@@ -17,7 +17,7 @@ ENV COMPOSER_HOME /home/.composer
 
 ENV COMPOSER_SETUP_SHA 55d6ead61b29c7bdee5cccfb50076874187bd9f21f65d8991d46ec5cc90518f447387fb9f76ebae1fbbacf329e583e30
 
-ENV COMPOSER_VERSION "1.3.1"
+ENV COMPOSER_VERSION "1.3.2"
 
 # Install Composer
 RUN php -r "readfile('https://getcomposer.org/installer');" > /tmp/composer-setup.php \
