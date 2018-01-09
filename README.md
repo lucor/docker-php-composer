@@ -1,5 +1,8 @@
 # Lightweight Docker Image for Composer
 
+## DEPRECATED
+This image has been deprecated in favour of the [official composer Docker Container](https://hub.docker.com/_/composer/) that now is built on Alpine and PHP 7.
+
 [![](https://images.microbadger.com/badges/image/lucor/composer.svg)](http://microbadger.com/images/lucor/composer "Get your own image badge on microbadger.com")
 
 A lightweight Docker image for [Composer](https://getcomposer.org/)
