@@ -1,6 +1,4 @@
-FROM lucor/php7-cli:latest
-
-MAINTAINER Luca Corbo <lu.corbo@gmail.com>
+FROM php:cli-alpine
 
 WORKDIR /app
 
@@ -15,9 +13,9 @@ ENV COMPOSER_ALLOW_SUPERUSER 1
 
 ENV COMPOSER_HOME /home/.composer
 
-ENV COMPOSER_SETUP_SHA 544e09ee996cdf60ece3804abc52599c22b1f40f4323403c44d44fdfdd586475ca9813a858088ffbc1f233e9b180f061
+ENV COMPOSER_SETUP_SHA c31c1e292ad7be5f49291169c0ac8f683499edddcfd4e42232982d0fd193004208a58ff6f353fde0012d35fdd72bc394
 
-ENV COMPOSER_VERSION "1.6.2"
+ENV COMPOSER_VERSION "2.0.6"
 
 # Install Composer
 RUN php -r "readfile('https://getcomposer.org/installer');" > /tmp/composer-setup.php \

@@ -9,10 +9,8 @@ A lightweight Docker image for [Composer](https://getcomposer.org/)
 
 It provides:
 
-  - composer `v1.6.1`
-  - php `v7.1.x`
-
-For the full list of available PHP extensions see the [lucor/php7-cli](https://hub.docker.com/r/lucor/php7-cli/) base image
+  - composer `v2.0.6`
+  - php `v7.4.x`
 
 ## Usage
 
