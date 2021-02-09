@@ -9,7 +9,7 @@ A lightweight Docker image for [Composer](https://getcomposer.org/)
 
 It provides:
 
-  - composer `v2.0.6`
+  - composer `v2.0.9`
   - php `v7.4.x`
 
 ## Usage

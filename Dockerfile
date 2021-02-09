@@ -1,4 +1,4 @@
-FROM php:cli-alpine
+FROM php:7.4-cli-alpine
 
 WORKDIR /app
 
@@ -13,9 +13,9 @@ ENV COMPOSER_ALLOW_SUPERUSER 1
 
 ENV COMPOSER_HOME /home/.composer
 
-ENV COMPOSER_SETUP_SHA c31c1e292ad7be5f49291169c0ac8f683499edddcfd4e42232982d0fd193004208a58ff6f353fde0012d35fdd72bc394
+ENV COMPOSER_SETUP_SHA 756890a4488ce9024fc62c56153228907f1545c228516cbf63f885e036d37e9a59d27d63f46af1d4d07ee0f76181c7d3
 
-ENV COMPOSER_VERSION "2.0.6"
+ENV COMPOSER_VERSION "2.0.9"
 
 # Install Composer
 RUN php -r "readfile('https://getcomposer.org/installer');" > /tmp/composer-setup.php \
