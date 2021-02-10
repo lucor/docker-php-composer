@@ -28,3 +28,11 @@ RUN php -r "readfile('https://getcomposer.org/installer');" > /tmp/composer-setu
 # Set up a /composer/bin volume so that the composer binary can be mounted
 # and used in third-party php images (i.e with differents php versions)
 VOLUME /composer/bin
+
+RUN apk add --no-cache \
+    bash \
+    libzip \
+    libzip-dev \
+    git
+
+RUN docker-php-ext-install zip
