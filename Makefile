@@ -1,7 +1,7 @@
 .PHONY: build test
 
 NAME=lucor/composer
-VERSION=2.0.9
+VERSION=2.2.5
 
 build:
 	docker build \
